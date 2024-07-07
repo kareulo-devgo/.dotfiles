@@ -18,6 +18,9 @@
     "editor.renderWhitespace": "trailing",
     "explorer.autoReveal": true,
     "explorer.compactFolders": false,
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
     "files.autoSave": "onFocusChange",
     "files.exclude": {
         "**/.DS_Store": true,
@@ -48,6 +51,5 @@
     "workbench.layoutControl.enabled": false,
     "workbench.settings.editor": "json",
     "workbench.sideBar.location": "right",
-    "workbench.startupEditor": "none",
-    "workbench.tree.indent": 24
+    "workbench.startupEditor": "none"
 }
