@@ -1,11 +1,10 @@
 {
-    "[blade]": {
-        "editor.autoClosingBrackets": "always",
-        "editor.defaultFormatter": "shufo.vscode-blade-formatter"
-    },
     "[php]": {
         "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
     },
+    "codesnap.containerPadding": "1em",
+    "codesnap.showWindowControls": false,
+    "codesnap.shutterAction": "copy",
     "editor.cursorBlinking": "phase",
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
