@@ -1,0 +1,53 @@
+{
+    "[blade]": {
+        "editor.autoClosingBrackets": "always",
+        "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+    },
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    "editor.cursorBlinking": "phase",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.detectIndentation": false,
+    "editor.fontFamily": "JetBrainsMonoNL Nerd Font",
+    "editor.formatOnSave": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.lineHeight": 2,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "trailing",
+    "explorer.autoReveal": true,
+    "explorer.compactFolders": false,
+    "files.autoSave": "onFocusChange",
+    "files.exclude": {
+        "**/.DS_Store": true,
+        "**/.git": true,
+        "**/.hg": true,
+        "**/.next": true,
+        "**/.svn": true,
+        "**/CVS": true,
+        "**/node_modules": true,
+        "**/Thumbs.db": true
+    },
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "git.openRepositoryInParentFolders": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "prettier.printWidth": 120,
+    "prettier.tabWidth": 4,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "vsicons.dontShowNewVersionMessage": true,
+    "window.commandCenter": false,
+    "window.customTitleBarVisibility": "auto",
+    "window.menuBarVisibility": "compact",
+    "window.titleBarStyle": "custom",
+    "workbench.activityBar.location": "hidden",
+    "workbench.colorTheme": "GitHub Dark Default",
+    "workbench.editor.showTabs": "single",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.layoutControl.enabled": false,
+    "workbench.settings.editor": "json",
+    "workbench.sideBar.location": "right",
+    "workbench.startupEditor": "none",
+    "workbench.tree.indent": 24
+}

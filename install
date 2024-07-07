@@ -1,0 +1,16 @@
+#!/bin/bash
+
+config_dir="$HOME/.config"
+dotfiles_dir="$HOME/.dotfiles"
+
+# Remove existing configuration
+rm -rf "$HOME/.bashrc.d"
+rm -rf "$HOME/.gitconfig"
+rm -rf "$config_dir/Code/User/settings.json"
+rm -rf "$config_dir/starship.toml"
+
+# Symlink new configuration
+ln -sf "$dotfiles_dir/.bashrc.d" "$HOME"
+ln -sf "$dotfiles_dir/.gitconfig" "$HOME/.gitconfig"
+ln -sf "$dotfiles_dir/settings.json" "$config_dir/Code/User/settings.json"
+ln -sf "$dotfiles_dir/starship.toml" "$config_dir/starship.toml"
