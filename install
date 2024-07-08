@@ -1,14 +1,29 @@
 #!/bin/bash
 
+set -e
+
 config_dir="$HOME/.config"
 dotfiles_dir="$HOME/.dotfiles"
 
-rm -rf "$HOME/.bashrc.d"
-rm -rf "$HOME/.gitconfig"
-rm -rf "$config_dir/Code/User/settings.json"
-rm -rf "$config_dir/starship.toml"
+if [ ! -d "$dotfiles_dir" ]; then
+    echo "Error: Dotfiles directory not found at $dotfiles_dir."
+    exit 1
+fi
 
-ln -sf "$dotfiles_dir/.bashrc.d" "$HOME"
-ln -sf "$dotfiles_dir/.gitconfig" "$HOME/.gitconfig"
-ln -sf "$dotfiles_dir/settings.json" "$config_dir/Code/User/settings.json"
-ln -sf "$dotfiles_dir/starship.toml" "$config_dir/starship.toml"
+symlink() {
+    if [ -e "$2" ]; then
+        mv "$2" "$2.$(date +%Y%m%d%H%M%S).bak"
+    fi
+
+    ln -sfn "$1" "$2"
+}
+
+symlink "$dotfiles_dir/.bashrc.d" "$HOME/.bashrc.d"
+symlink "$dotfiles_dir/.bashrc" "$HOME/.bashrc"
+symlink "$dotfiles_dir/.gitconfig" "$HOME/.gitconfig"
+symlink "$dotfiles_dir/settings.json" "$config_dir/Code/User/settings.json"
+symlink "$dotfiles_dir/starship.toml" "$config_dir/starship.toml"
+
+unset config_dir dotfiles_dir
+
+echo "Success: Dotfiles installed. To apply changes, either run 'source ~/.bashrc' or restart your terminal."

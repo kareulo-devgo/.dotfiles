@@ -13,14 +13,14 @@ My dotfiles repository for Linux.
 -   [Visual Studio Code](https://code.visualstudio.com/docs/setup/linux)
 
 ```sh
-$ git clone https://github.com/kareulo-devgo/.dotfiles.git ~
+git clone https://github.com/kareulo-devgo/.dotfiles.git ~
 ```
 
 ## Usage
 
 ```sh
-$ cd ~/.dotfiles
-$ ./install # Warning: This replaces the existing configuration.
+cd ~/.dotfiles
+./install
 ```
 
 ## Contributing

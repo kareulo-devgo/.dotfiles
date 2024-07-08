@@ -1,9 +1,0 @@
-export EDITOR=vi
-export SUDO_EDITOR="$EDITOR"
-export VISUAL="$EDITOR"
-
-export HISTCONTROL=ignoredups
-export HISTFILESIZE=10000
-export HISTSIZE=10000
-
-export LC_COLLATE=C
